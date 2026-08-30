@@ -1,0 +1,16 @@
+{
+  "name": "cart-rescue",
+  "version": "1.0.0",
+  "description": "Cart Rescue - AI Abandonment Diagnosis & Remediation Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run install:all && npm run seed && npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

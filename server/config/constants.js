@@ -1,0 +1,33 @@
+export const BOUNDED_ACTIONS = {
+  DO_NOTHING: 'DO_NOTHING',
+  PAYMENT_RETRY: 'PAYMENT_RETRY',
+  SHOW_PAYMENT_HELP: 'SHOW_PAYMENT_HELP',
+  OFFER_COD: 'OFFER_COD',
+  SHIPPING_INCENTIVE: 'SHIPPING_INCENTIVE',
+  DELIVERY_INFORMATION: 'DELIVERY_INFORMATION',
+  SMALL_DISCOUNT: 'SMALL_DISCOUNT',
+  REMINDER_NOTIFICATION: 'REMINDER_NOTIFICATION'
+};
+
+export const ABANDONMENT_REASONS = {
+  PAYMENT_FAILURE: 'payment_failure',
+  SHIPPING_COST: 'shipping_cost',
+  DELIVERY_DELAY: 'delivery_delay',
+  PRICE_SHOPPING: 'price_shopping',
+  COD_UNAVAILABLE: 'cod_unavailable',
+  CHECKOUT_FRICTION: 'checkout_friction',
+  LOW_INTENT: 'low_intent',
+  UNKNOWN: 'unknown'
+};
+
+export const RISK_LEVELS = {
+  LOW: 'low',
+  MEDIUM: 'medium',
+  HIGH: 'high',
+  CRITICAL: 'critical'
+};
+
+export const EXPERIMENT_GROUPS = {
+  CONTROL: 'CONTROL',
+  TREATMENT: 'TREATMENT'
+};
